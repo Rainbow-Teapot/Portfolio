@@ -2,320 +2,404 @@
 <html lang="en">
 
 <head>
+    <!--
+     - Roxy: Bootstrap template by GettTemplates.com
+     - https://gettemplates.co/roxy
+    -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!--<link rel="icon" href="../../favicon.ico"> -->
+    <title>Rainbow Teapot Studio || Portfolio</title>
+    <meta name="description" content="Roxy">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Portfolio Rainbow Teapot Studio
+    <!-- External CSS -->
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/select2/select2.min.css">
+    <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/lightcase/lightcase.css">
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    </title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Work+Sans:300,400,700" rel="stylesheet">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/esm/popper.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
-        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
-
-
-    <link href="carousel.css" rel="stylesheet">
-
-
+    <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
 
 </head>
+<body data-spy="scroll" data-target="#navbar" class="static-layout">
+		<nav id="header-navbar" class="navbar navbar-expand-lg py-4">
+	    <div class="container">
+	        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav-header" aria-controls="navbar-nav-header" aria-expanded="false" aria-label="Toggle navigation">
+	            <span class="lnr lnr-menu"></span>
+	        </button>
+	        <div class="collapse navbar-collapse" id="navbar-nav-header">
+	            <ul class="navbar-nav ml-auto">
+	                <li class="nav-item">
+	                    <a class="nav-link" href="/">Inicio</a>
+	                </li>
+	                <li class="nav-item">
+	                    <a class="nav-link" href="about.html">Equipo</a>
+	                </li>
+	                <li class="nav-item">
+	                    <a class="nav-link" href="blog.html">Proyectos</a>
+	                </li>
+	                <li class="nav-item">
+	                    <a class="nav-link" href="contact.html">Contacto</a>
+	                </li>
+	                
+	            </ul>
+	        </div>
+	    </div>
+	</nav>
+	
+<div class="jumbotron d-flex align-items-center">
+  <div class="container text-center">
+    <h1 class="display-1 mb-4"><img src="img/logo.png"></h1>
+  </div>
+  <div class="rectangle-1"></div>
+  <div class="rectangle-2"></div>
+  <div class="rectangle-transparent-1"></div>
+  <div class="rectangle-transparent-2"></div>
+  <div class="circle-1">
+  	<img src="img/obj_patinete.png" alt="">
+  </div>
+  <div class="circle-2">
+  	<img src="img/obj_cubo.png" alt="">
+  </div>
+  <div class="circle-3">
+  	<img src="img/obj_naranja.png" alt="">
+  </div>
+  <div class="triangle triangle-1">
+  	<img src="img/obj_taza.png" alt="">
+  </div>
+  <div class="triangle triangle-2">
+  	<img src="img/obj_sombrero.png" alt="">
+  </div>
+  <div class="triangle triangle-3">
+  	<img src="img/obj_tetera.png" alt="">
+  </div>
+  <div class="triangle triangle-4">
+  	<img src="img/obj_lupa.png" alt="">
+  </div>
+</div>	
 
-<body>
-    <div class="navbar-wrapper">
-        <div class="container">
-
-            <nav class="navbar navbar-inverse navbar-static-top">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                            data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="#">Rainbow Teapot Studio</a>
-                    </div>
-                    <div id="navbar" class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav">
-                            <li class="active"><a href="#">Inicio</a></li>
-                            <li><a href="#Equipo">Equipo</a></li>
-                            <li><a href="#Juego">Detec-tea Miss Teapot</a></li>
-                            <li><a href="#Desarrollo">Novedades</a></li>
-                            <li><a href="#Contacto">Contacto</a></li>
-                        </ul>
+<!-- Features Section-->
+<section id="features" class="bg-white">
+    <div class="container">
+        <div class="section-content">
+            <!-- Section Title -->
+            <div class="title-wrap mb-5" data-aos="fade-up">
+                <h2 class="section-title">
+                    EQUIPO:
+                </h2>
+                <p class="section-sub-title">“Rainbow Teapot Studio es un equipo indie de desarrollo de videojuegos formado en Madrid en 2019 a raíz de un trabajo universitario. Tenemos influencias diferentes en cuanto a estilos y jugabilidad, pero nos tira mucho la estética cartoon y un poco excéntrica, es decir, un poco alejado de lo realista”.</p>
+            </div>
+            <!-- End of Section Title -->
+            <div class="row">
+                <!-- Features Holder-->
+                <div class="col-md-10 offset-md-1 features-holder">
+                    <div class="row">
+                        <!-- Features Item -->
+                        <div class="col-md-4 col-sm-12 text-center mt-4">
+                            <div class="shadow rounded feature-item p-4 mb-4" data-aos="fade-up">
+                                <div class="my-4">
+                                    <img src="img/andrea.png" alt="ANDREA">
+                                </div>
+                                <h4>ANDREA</h4>
+                                <p>Artista técnica. Se ocupa de tareas diversas tanto de diseño como de programación. Ñah como forma de vida. Mega fan de Disney.</p>
+                            </div>
+                            <div class="shadow rounded feature-item p-4 mb-4" data-aos="fade-up">
+                                <div class="my-4">
+                                    <img src="img/juanantonio.png" alt="ANDREA">
+                                </div>
+                                <h4>JUAN ANTONIO</h4>
+                                <p>Ingeniero de Sonido. Encargado de la música y los efectos de sonido del videojuego. Murciano, medio tartaja y músico. No todo iba a ser malo.</p>
+                            </div>
+                        </div>
+                        <!-- End of Feature Item -->
+                        <!-- Features Item -->
+                        <div class="col-md-4 col-sm-12 text-center">
+                            <div class="shadow rounded feature-item p-4 mb-4" data-aos="fade-up">
+                                <div class="my-4">
+                                     <img src="img/carlos.png" alt="Carlos">
+                                </div>
+                                <h4>CARLOS</h4>
+                                <p>Game designer. Es el encargado de inventar nuevos niveles, mecánicas y desafíos. Intento de desarrollador a tiempo parcial es el único del equipo que toma té.</p>
+                            </div>
+                            <div class="shadow rounded feature-item p-4 mb-4" data-aos="fade-up">
+                                <div class="my-4">
+                                     <img src="img/logo.png" width="250px" height="250px" alt="Rainbow teapot">
+                                </div>
+                                <h4> </h4>
+                                <p></p>
+                            </div>
+                            
+                        </div>
+                        <!-- End of Feature Item -->
+                        <!-- Features Item -->
+                        <div class="col-md-4 col-sm-12 text-center mt-4">
+                            <div class="shadow rounded feature-item p-4 mb-4" data-aos="fade-up">
+                                <div class="my-4">
+                                   <img src="img/celia.png" alt="CELIA">
+                                </div>
+                                <h4>CELIA</h4>
+                                <p>Artista principal. Encargada del diseño y la estética del videojuego: personajes, fondos y animaciones. Su vida se resume en leer libros y ver vídeos de gatos.</p>
+                            </div>
+                            <div class="shadow rounded feature-item p-4 mb-4" data-aos="fade-up">
+                                <div class="my-4">
+                                    <img src="img/marcos.png" alt="MARCOS">
+                                </div>
+                                <h4>MARCOS</h4>
+                                <p>Programador principal. Desarrollador del motor del videojuego: TheTeapotEngine. Intentando no cagarla en el código. En la vida ya tal... Le gustan los gatos y los viernes de pipsa.</p>
+                            </div>
+                        </div>
+                        <!-- End of Feature Item -->
                     </div>
                 </div>
-            </nav>
-
+                <!-- End of Features Holder-->
+            </div>
         </div>
     </div>
+</section>
+<!-- End of Features Section-->	<section id="section-featurettes" class="featurettes overlay bg-fixed" style="background-image: url(img/bg.jpg);">
 
+    <div class="container">
+        <div class="section-content">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row align-items-center text-white">
 
-    <!-- Carousel
-      ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-            <li data-target="#myCarousel" data-slide-to="3"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <img class="first-slide" src="./src/Imagen_carrousel_0.png" alt="First slide">
+                        <div class="col-md-4 offset-md-2 col-sm-6" data-aos="fade-right">
+			                
+							 <img src="img/logobraking.png" width="300px"/>
+                            <p class="mb-4">
+								
+								 En un pequeño pueblo de Wisconsin, Lucho, un pequeño niño de un año, ha decidido que es hora de jugar. Es invierno, por lo que hace mucho frío y no puede disfrutar de la compañía de sus perros en la calle. Tiene que encontrar una nueva forma de entretenimiento…
+Buscando por su habitación, ha encontrado un montón de juguetes con ruedas y se le ha ocurrido una idea genial: “Van a hacer una carrera, pero será el último el que gane”. Cómo circuito de competición ha elegido las paredes de su habitación, ¡será una carrera en caída libre!
+Lucho tiene mucha imaginación, así que los juguetes compiten en una inmensidad de escenarios diferentes de lo más dispares, desde un mundo de chucherías, hasta el sitio donde podrían ocurrir sus peores pesadillas, pero sin perder nunca el aspecto infantil.
+</p>
+                            <button type="button" class="btn btn-outline-primary">VER MAS</button>
+                        </div><!--/ .col-md-4.col-md-offset-2.col-sm-6 -->
 
-                <div class="container">
-                    <div class="carousel-caption">
-                        </br>
-                        <h1>¡Bienvenid@s!</h1>
-                        <p>Bienvenidos al portfolio de Rainbow Teapot, un estudio de videojuegos dispuestos a servirte
-                            el mejor té. Actualmente estamos desarrollando nuestro primer videojuego: "Detec-tea Miss
-                            Teapot"</p>
-                        <p><a
-                                href="https://rainbow-teapot.github.io/RainbowTeapotGame">https://rainbow-teapot.github.io/RainbowTeapotGame</a>
-                        </p>
-                        <p><a class="btn btn-lg btn-primary" href="#Equipo" role="button">Más sobre nosotros</a></p>
+                        <div class="col-md-4 offset-md-right-2 col-sm-6" data-aos="flip-right">
+                            <img class="my-5" src="img/braking.png" alt="">
+                        </div><!--/ .col-md-4.col-md-offset-right-2.col-sm-6 -->
 
+                    </div><!--/ .featurettes-item -->
+
+                </div><!--/ .col-md-12 -->
+
+            </div><!--/ .row -->
+        </div>
+    </div><!--/ .container -->
+
+</section>	<section id="section-featurettes" class="featurettes">
+
+    <div class="container">
+        <div class="section-content">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row align-items-center">
+
+                        <div class="col-md-4 offset-md-2 col-sm-6" data-aos="flip-left">
+                            <img class="my-5" src="img/teapot.png" alt="">
+                        </div><!--/ .col-md-4.col-md-offset-right-2.col-sm-6 -->
+
+                        <div class="col-md-4 offset-md-right-2 col-sm-6" data-aos="fade-left">
+                             <img src="img/logodetectea.png" width="300px"/>
+                            <p>Detec-tea Miss Teapot es un videojuego con estética cartoon en dos dimensiones ambientado en Estados Unidos, en la década de 1930, donde nuestra protagonista, Erin, vivirá momentos de tensión y aventura mientras huye de la banda de mafiosos que pretende liquidarla. Erin cometió un error muy grave al enfadar al que no debía, y ahora se ve obligada a recorrer las frías calles de Nueva Orleans mientras da esquinazo a O’Callahan y su banda de matones. Lo que este villano no sabe es que Erin fue bendecida de nacimiento con un poder que le hace un tanto especial: es capaz de comunicarse con su sombra e interactuar con ella. ¿Conseguirá Erin escapar de los suburbios de una metrópolis de 1932 custodiada por la mafia?</p>
+                             <button type="button" class="btn btn-black">VER MAS</button>
+                            
+                        </div><!--/ .col-md-4.col-md-offset-2.col-sm-6 -->
+
+                    </div><!--/ .featurettes-item -->
+
+                </div><!--/ .col-md-12 -->
+
+            </div><!--/ .row -->
+        </div>
+    </div><!--/ .container -->
+
+</section>	<!-- Testimonial Section-->
+<section id="testimonial" class="section-padding bg-fixed bg-white overlay" style="background-image: url(img/bg-white.jpg);">
+    <div class="container">
+        <div class="section-content" data-aos="fade-up">
+            <div class="heading-section text-center">
+                <h2>
+                    Comentarios de nuestros jugadores
+                </h2>
+            </div>
+            <div class="row">
+                <!-- Testimonial -->
+                <div class="testi-content testi-carousel owl-carousel">
+                    <div class="testi-item text-center">
+                        <i class="testi-icon fa fa-3x fa-quote-left"></i>
+                        <h4 class="testi-text">Ya me he pasado el primer nivel y me ha flipado, es genial y el diseño es maravilloso 🤗🤗</h4>
+                        <div class="testi-meta-inner d-flex justify-content-center align-items-center">
+                         
+                        </div>
+                        
+                    </div>
+                    <div class="testi-item text-center">
+                        <i class="testi-icon fa fa-3x fa-quote-left"></i>
+                        <h4 class="testi-text">Me parece muy entretenido. Al principio es un poco lío, porque no sabes de que va, pero rápido se coge el tranquillo y se disfruta un montón</h4>
+                        <div class="testi-meta-inner d-flex justify-content-center align-items-center">
+                            
+                        </div>
+                    </div>
+                     <div class="testi-item text-center">
+                        <i class="testi-icon fa fa-3x fa-quote-left"></i>
+                        <h4 class="testi-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci <br> non doloribus ut, alias doloremque perspiciatis.</h4>
+                        <div class="testi-meta-inner d-flex justify-content-center align-items-center">
+                            <div class="testi-img mr-2">
+                                <img src="img/testi-1.jpg" alt="">
+                            </div>
+                            <div class="testi-details">
+                                <p class="testi-author mb-0 font-weight-bolder">John Doe</p>
+                                <p class="testi-desc mb-0">Web Designer</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <!-- End of Testimonial -->
             </div>
-            <div class="item">
-                <img class="second-slide" src="./src/Imagen_carrousel_1.png" alt="Second slide">
-                <div class="container">
-                    <div class="carousel-caption">
-                        <h1>Detec-tea Miss Teapot</h1>
-                        <p>Detectea Miss Teapot es juego de plataformas y puzzles en dos dimensiones, estilo cartoon y
-                            ambientado en la primera mitad del siglo XX en EEUU</p>
-                        <p><a class="btn btn-lg btn-primary" href="#Juego" role="button">Leer más</a></p>
+        </div>
+    </div>
+</section>
+<!-- End of Testimonial Section-->	
 
+<!-- Client Section -->
+<section id="client" class="overlay bg-fixed" style="background-image: url(img/bg.jpg);">
+    <div class="container">
+        <div class="section-content" data-aos="fade-up">
+            <div class="row ">
+                <div class="col-md-12">
+                    <!-- Section Title -->
+                    <div class="title-wrap mb-5">
+                        <h2>Últimas fotos</h2>
                     </div>
+                    <!-- End of Section Title -->
                 </div>
-            </div>
-
-            <div class="item">
-                <img class="forth-slide" src="./src/Imagen_carrousel_3.png" alt="Forth slide">
-                <div class="container">
-                    <div class="carousel-caption">
-                        <h1>Noticias</h1>
-                        <p>En este apartado podrás leer sobre el estado actual de nuestro videojuego </p>
-                        <p><a class="btn btn-lg btn-primary" href="#Desarrollo" role="button">Novedades</a></p>
-
+                <!-- Client Holder -->
+                <div class="col-md-12 client-holder">
+                    <div class="client-slider owl-carousel">
+                        <div class="client-item">
+                           <a href="https://www.instagram.com/p/B5cwagxi-4Z/"> <img class="img-responsive" src="img/IG_1.png" width="200px" alt=" "></a>
+                        </div>
+                        <div class="client-item">
+                            <a href="https://www.instagram.com/p/B5GZnraC4IM/"> <img class="img-responsive" src="img/IG_2.png" width="200px" alt=" "></a>
+                        </div>
+                        <div class="client-item">
+                            <a href="https://www.instagram.com/p/B4-BHkzCMwS/"> <img class="img-responsive" src="img/IG_3.png" width="200px" alt=" "></a>
+                        </div>
+                        <div class="client-item">
+                            <a href="https://www.instagram.com/p/B44yKRjievp/"> <img class="img-responsive" src="img/IG_4.png" width="200px" alt=" "></a>
+                        </div>
+                        <div class="client-item">
+                            <a href="https://www.instagram.com/p/B40Tr3lCw8z/"> <img class="img-responsive" src="img/IG_5.png" width="200px" alt=" "></a>
+                        </div>
+                        <div class="client-item">
+                            <a href="https://www.instagram.com/p/B4r-NdlCPOo/"> <img class="img-responsive" src="img/IG_6.png" width="200px" alt=" "></a>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="item">
-                <img class="third-slide" src="./src/Imagen_carrousel_2.png" alt="Third slide">
-                <div class="container">
-                    <div class="carousel-caption">
-                        <h1>¡Contactanos!</h1>
-                        <p>Si tienes cualquier duda, quieres contactar con nosotros o seguir más de cerca nuestro
-                            progreso, puedes encontrarnos en nuestras redes sociales</p>
-                        <p><a class="btn btn-lg btn-primary" href="#Contacto" role="button">Contacto</a></p>
-                        <p3><a href="https://www.freepik.es/fotos-vectores-gratis/negocios">Vector de Negocios creado
-                                por - www.freepik.es</a> </p3>
-
-                    </div>
+                    <!-- End of Client Holder -->
                 </div>
             </div>
         </div>
-        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div><!-- /.carousel -->
-
-
-    <!-- Marketing messaging and featurettes
-      ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-
-    <div class="container marketing">
-        <A name="Equipo"></a>
-        <h2 class="featurette-heading"> ¡Conoce a nuestro equipo! </h2>
-        <!-- Three columns of text below the carousel -->
-
-        <div class="row" text-align="center">
-
-            <div class="col-md-15 col-sm-3">
-
-                <img src="./src/andrea2.png" class="img-thumbnail" alt="Andrea" width="200" height="200">
-
-                <h2>Andrea</h2>
-                <p>Artista técnica. Se ocupa de tareas diversas tanto de diseño como de programación. Ñah como forma de
-                    vida. Mega fan de Disney. </p>
-
+</section>
+<!-- End of Client Section -->	<!-- Reservation Section -->
+<section id="reservation" class="bg-white section-content">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-5 offset-lg-1 mb-5 mb-lg-0" data-aos="fade-right">
+                <div class="bg-white p-5 shadow">
+                    <div class="heading-section text-center">
+                        <h2 class="mb-4">
+                            Patreon
+	                        <div data-aos="flip-left">
+	                            <img class="my-5" src="img/patreon.jpg" alt="">
+	                        </div>
+                        </h2>
+                    </div>
+                  
+                </div>
             </div>
-            <!-- /.col-lg-3 -->
-
-            <div class="col-md-15 col-sm-3">
-                <img src="./src/carlos.png" class="img-thumbnail" alt="Carlos" width="200" height="200">
-
-
-                <h2>Carlos</h2>
-                <p>Game designer. Creador del concepto de nuestro videojuego y es el encargado de inventar nuevos
-                    niveles, mecánicas y desafíos. Intento de desarrollador a tiempo parcial y bebedor de té a tiempo
-                    completo (único del equipo que toma té.)</p>
-
-            </div>
-            <!-- /.col-lg-3 -->
-
-            <div class="col-md-15 col-sm-3">
-                <img src="./src/celia.png" class="img-thumbnail" alt="Celia" width="200" height="200">
-
-                <h2>Celia</h2>
-                <p>Artista principal. Encargada del diseño y la estética del videojuego: personajes, fondos y
-                    animaciones. Su vida se resume en leer libros y ver vídeos de gatos.</p>
-
-            </div>
-            <!-- /.col-lg-3 -->
-            <div class="col-md-15 col-sm-3">
-                <img src="./src/juanantonio.png" class="img-thumbnail" alt="Juan Antornio" width="200" height="200">
-
-                <h2>Juan Antonio</h2>
-                <p>Ingeniero de Sonido. Encargado de la música y los efectos de sonido del videojuego. Murciano, medio
-                    tartaja y músico. No todo iba a ser malo. </p>
-
-            </div>
-            <!-- /.col-lg-3 -->
-
-            <div class="col-md-15 col-sm-3">
-
-                <img src="./src/marcos.png" class="img-thumbnail" alt="Marcos" width="200" height="200">
-
-                <h2>Marcos</h2>
-                <p>Programador principal. Desarrollador del motor del videojuego: TheTeapotEngine. Intentando no cagarla
-                    en el código. En la vida ya tal... Le gustan los gatos y los viernes de pipsa. </p>
-
-            </div>
-
-        </div><!-- /.row -->
+            <div class="col-lg-4 offset-lg-1" data-aos="fade-left">
+				<center><img src="img/patreonlogo.png" width="100px"/></center>
+                <h2 class="mb-4">
+                    ¡Únete a nuestro patreon!
+                </h2>
+                <p class="mb-4">Nuestros juegos son y siempre serán gratuitos, pero por una pequeña cuota mensual, ¡elegida por ti! podrás tener acceso exclusivo a nuevas skins, niveles, merchandising etc para nuestros juegos. Además, tenemos un contacto muy cercano con nuestra comunidad, todos nuestros mecenas podrán participar en encuestas para elegir el nuevo contenido de nuestros juegos y hablar con nosotros en chats exclusivos. </br>¿A qué esperas? ¡Conviértete en nuestro mecenas!</p>
 
 
-        <!-- START THE FEATURETTES -->
-
-        <hr class="featurette-divider">
-        <A name="Juego"></a>
-        <div class="row featurette">
-            <div class="col-md-7">
-                <h2 class="featurette-heading">Detec-tea Miss Teapot. </h2>
-                <p class="lead">Detec-tea Miss Teapot es un videojuego con estética cartoon en dos dimensiones
-                    ambientado en Estados Unidos, en la década de 1930, donde nuestra protagonista, Erin, vivirá
-                    momentos de tensión y aventura mientras huye de la banda de mafiosos que pretende liquidarla. Erin
-                    cometió un error muy grave al enfadar al que no debía, y ahora se ve obligada a recorrer las frías
-                    calles de Nueva Orleans mientras da esquinazo a O’Callahan y su banda de matones.
-
-                    Lo que este villano no sabe es que Erin fue bendecida de nacimiento con un poder que le hace un
-                    tanto especial: es capaz de comunicarse con su sombra e interactuar con ella. ¿Conseguirá Erin
-                    escapar de los suburbios de una metrópolis de 1932 custodiada por la mafia?</p>
-            </div>
-            <div class="col-md-5">
-                <img class="featurette-image img-responsive center-block" src="./src/rainbow.png"
-                    alt="Generic placeholder image">
-                Photo by <a href="/photographer/mariah22-54283">mariah22</a> from <a
-                    href="https://freeimages.com/">FreeImages</a>
-            </div>
-			<center><iframe width="800" height="450" src="https://www.youtube.com/embed/WjSbcPKF35Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-            <A name="Desarrollo"></a>
-            <div class="col-md-5">
-                <img class="featurette-image img-responsive center-block" src="./src/progreso2.png"
-                    alt="Generic placeholder image">
-
-            </div>
-            <div class="col-md-7">
-                <h2 class="featurette-heading">Estado del juego</h2>
-                <p class="lead">
-                    <b>20.10.2019</b>
-                    </br>Finalmente hemos lanzado el juego!!!!
-                    </br>
-                    <b>17.10.2019</b>
-                    </br>El primer nivel está completado y totalmente funcional!
-                    </br>
-                    <b>14.10.2019.</b>
-                    </br>Actualmente está creado el primer nivel del videojuego, en nuestro twitter podéis ver un
-                    pequeño vídeo del gameplay.
-                    </br>
-                    <b>12.10.2019</b>
-                    </br>Ya está desarrollada la primera versión de la interfaz gráfica de menús.
-                    </br>
-                    <b>10.10.2019</b>
-                    </br>Gracias a que el TheTeapotEngine ahora soporta animaciones por medio de spritesheets,
-                    nuestra protagonista está aprendiendo a caminar y saltar.
-
-                    </br></br>
-                    Puedes encontrar más actualizaciones en nuestro <a
-                        href="https://twitter.com/RainbowTeapotSt">Twitter</a></p>
-            </div>
-
-        </div>
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-            <A name="Contacto"></a>
-            <div class="col-md-7">
-                <h2 class="featurette-heading">Contáctanos. <span class="text-muted">¡No seas tímido!</span></h2>
-                <center>
-                    <a href="https://rainbowteapotstudio.itch.io/"><img src="./src/itchio.png" width="100px"
-                            height="100px"></a>
-                    <a href="http://instagram.com/rainbowteapotst"><img src="./src/insta.png" width="100px"
-                            height="100px"></a>
-                    <a href="http://twitter.com/rainbowteapotst"><img src="./src/twitter.png" width="100px"
-                            height="100px"></a>
-                    <a href="mailto:rainbowteapotst@gmail.com"><img src="./src/mail.png" width="100px"
-                            height="100px"></a>
-                    <a href="https://www.patreon.com/rainbowteapotst"><img src="./src/patreon.png" width="100px"
-                            height="100px"></a>
-                </center>
-            </div>
-            <div class="col-md-5">
-                <img class="featurette-image img-responsive center-block" src="./src/RTLogoClara.png"
-                    alt="Generic placeholder image">
+                <a href="https://www.patreon.com/rainbowteapotst" class="btn btn-link p-0">
+                    <span>ÚNETE AHORA</span>
+                    <span class="lnr lnr-arrow-right"></span>
+                </a>
             </div>
         </div>
-
-        <hr class="featurette-divider">
-
-        <!-- /END THE FEATURETTES -->
-
-
-        <!-- FOOTER -->
-        <footer>
-            <p class="pull-right"><a href="#">Back to top</a></p>
-            <p>&copy; 2019 Rainbow Teapot Studio &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-        </footer>
-
-    </div><!-- /.container -->
-
-
-
+        
+    </div>
+</section>
+<!-- End of Reservation Section -->	<!-- Features Section-->
+<section id="cta" class="bg-fixed overlay" style="background-image: url(img/bg.jpg);">
+    <div class="container">
+        <div class="section-content" data-aos="fade-up">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 class="mb-2">Contáctanos. ¡No seas tímido!</h2>
+                   <center>
+                       <a href="https://rainbowteapotstudio.itch.io/"><img src="img/itchio.png" width="100px"
+                               height="100px"></a>
+                       <a href="http://instagram.com/rainbowteapotst"><img src="img/insta.png" width="100px"
+                               height="100px"></a>
+                       <a href="http://twitter.com/rainbowteapotst"><img src="img/twitter.png" width="100px"
+                               height="100px"></a>
+                       <a href="mailto:rainbowteapotst@gmail.com"><img src="img/mail.png" width="100px"
+                               height="100px"></a>
+                       <a href="https://www.patreon.com/rainbowteapotst"><img src="img/patreon.png" width="100px"
+                               height="100px"></a>
+                   </center>
+               
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End of Features Section--></div>
+<footer class="mastfoot my-3">
+    <div class="inner container">
+         <div class="row">
+         	<div class="col-lg-4 col-md-12 d-flex align-items-center">
+         		
+         	</div>
+         	<div class="col-lg-4 col-md-12 d-flex align-items-center">
+         		<p class="mx-auto text-center mb-0">&copy; 2019 Rainbow Teapot Studio <a href="https://gettemplates.co" target="_blank">GetTemplates</a>.</p>
+         	</div>
+           
+           
+            
+        </div>
+    </div>
+</footer>	<!-- External JS -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+	<script src="vendor/bootstrap/popper.min.js"></script>
+	<script src="vendor/bootstrap/bootstrap.min.js"></script>
+	<script src="vendor/select2/select2.min.js "></script>
+	<script src="vendor/owlcarousel/owl.carousel.min.js"></script>
+	<script src="vendor/stellar/jquery.stellar.js" type="text/javascript" charset="utf-8"></script>
+	<script src="vendor/isotope/isotope.min.js"></script>
+	<script src="vendor/lightcase/lightcase.js"></script>
+	<script src="vendor/waypoints/waypoint.min.js"></script>
+	 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	 
+	<!-- Main JS -->
+	<script src="js/app.min.js "></script>
+	<script src="//localhost:35729/livereload.js"></script>
 </body>
-
-
-
 </html>
